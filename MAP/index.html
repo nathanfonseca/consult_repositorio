@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logoMAP.png" type="image/x-icon">
+    <title>Consultor de Repositórios</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Consultor de Repositórios do GitHub</h1>
+        <div class="input-container">
+            <input type="text" id="usuario" placeholder="Digite o nome de usuário do GitHub">
+        </div>
+        <div class="button-container">
+            <button id="searchbtn">Buscar Repositórios</button>
+        </div>
+        
+        <div id="resultado">
+            <div id="loadingMessage">Carregando dados...</div>
+            <ul id="resultList"></ul>
+        </div>
+        
+        <div id="errorMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

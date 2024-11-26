@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #2f2f2f;
+  margin: 0;
+  padding: 0;
+  color: #ccc;
+}
+
+/* Contêiner */
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #3c3c3c;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* título */
+h1 {
+  font-size: 2.5rem;
+  color: #dafd00; 
+  margin-bottom: 20px;
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+}
+
+/* Campo de entrada (input) */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #dafd00;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #dafd00;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Botão de busca */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #dafd00;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a3c600; 
+}
+
+#resultado {
+  margin-top: 30px;
+  display: none;
+}
+
+#loadingMessage {
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+#resultList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#resultList li {
+  padding: 15px;
+  background-color: #4f4f4f; 
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+#resultList li:hover {
+  background-color: #dafd00; 
+}
+
+#resultList li a {
+  text-decoration: none;
+  color: #c8c8c8; 
+  font-weight: bold;
+}
+
+#resultList li a:hover {
+  text-decoration: underline;
+  color: #333; 
+}
+
+/* Mensagem de erro */
+#errorMessage {
+  font-size: 1rem;
+  color: #ff4e4e;
+  padding: 10px;
+  border: 1px solid #ff4e4e;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Responsividade*/
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  input[type="text"], button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  input[type="text"], button {
+    font-size: 0.9rem;
+  }
+}
